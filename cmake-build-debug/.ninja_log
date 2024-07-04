@@ -1,0 +1,6 @@
+# ninja log v6
+16	541	7418122062873782	CMakeFiles/simpleCoordCalc.dir/main.cpp.obj	cab08f6fe597904e
+542	662	7418122068134967	simpleCoordCalc.exe	66eb79c3e091269c
+12	18	7418121209581606	clean	34fe6ee3061c3a85
+20	492	7418122062913791	CMakeFiles/simpleCoordCalc.dir/converter.cpp.obj	72c7adcdc3086717
+7	234	7418198610688861	build.ninja	46c8e163270529ef
