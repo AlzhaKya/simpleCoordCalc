@@ -7,6 +7,7 @@ A Simple cli calculator to convert minecraft coordinates from one dimension to a
 Because: 
 - I can
 - I am learning 😊
+- I like cli...
 
 
 
