@@ -3,13 +3,13 @@
 
 
 int main() {
-    Coordinate coordinate;
+    Coordinate coordinate{};
 
     std::cout << "Input X value: " << std::endl;
-    std::cin >> coordinate.xCoordinate;;
+    coordinate.setXCoordinate();
 
     std::cout << "Input Z value: " << std::endl;
-    std::cin >> coordinate.zCoordinate;
+    coordinate.setZCoordinate();
 
     std::cout << std::endl
               <<"Desired Conversion: " << std::endl
@@ -18,7 +18,6 @@ int main() {
 
     short conversionChoice;
     std::cin >> conversionChoice;
-
 
     std::string dimension;
 
@@ -36,7 +35,7 @@ int main() {
         return 1;
     }
 
-    std::cout << dimension << " ("  << coordinate.xConverted << ", " << coordinate.zConverted << ")" << std::endl;
+    std::cout << dimension << "("  << coordinate.getXResult() << ", " << coordinate.getZResult() << ")" << std::endl;
 
 
 }

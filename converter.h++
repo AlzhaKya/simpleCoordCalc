@@ -1,12 +1,17 @@
 #pragma once
+#include <iostream>
 
 class Coordinate {
-public:
-    double xCoordinate;
-    double zCoordinate;
     double xConverted;
     double zConverted;
+    double xCoordinate;
+    double zCoordinate;
 
+public:
     void overworldToNether();
     void netherToOverworld();
+    void setXCoordinate();
+    void setZCoordinate();
+    double getXResult() const;
+    double getZResult() const;
 };
