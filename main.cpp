@@ -3,14 +3,13 @@
 
 
 int main() {
+    Coordinate coordinate;
 
     std::cout << "Input X value: " << std::endl;
-    double xValue;
-    std::cin >> xValue;
+    std::cin >> coordinate.xCoordinate;;
 
     std::cout << "Input Z value: " << std::endl;
-    double zValue;
-    std::cin >> zValue;
+    std::cin >> coordinate.zCoordinate;
 
     std::cout << std::endl
               <<"Desired Conversion: " << std::endl
@@ -21,16 +20,15 @@ int main() {
     std::cin >> conversionChoice;
 
 
-    std::tuple<double, double> coordinates;
     std::string dimension;
 
     switch (conversionChoice) {
         case 1:
-            coordinates = converter::overworldToNether(xValue,zValue);
+            coordinate.overworldToNether();
         dimension = "Nether coordinates: ";
         break;
         case 2:
-             coordinates = converter::netherToOverworld(xValue,zValue);
+            coordinate.netherToOverworld();
         dimension = "Overworld coordinates: ";
         break;
         default:
@@ -38,5 +36,7 @@ int main() {
         return 1;
     }
 
-    std::cout << dimension << "(" << std::get<0>(coordinates) << ", " << std::get<1>(coordinates) << ")" << std::endl;
+    std::cout << dimension << " ("  << coordinate.xConverted << ", " << coordinate.zConverted << ")" << std::endl;
+
+
 }
